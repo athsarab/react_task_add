@@ -64,7 +64,7 @@ const UserForm = props => {
                             marginTop: '10px',  
                         }}
                         > 
-                            Name
+                            Name  
                         </Typography>
                         <Input
                         type="text"
