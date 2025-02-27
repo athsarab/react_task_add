@@ -61,9 +61,9 @@ const UserForm = props => {
                             display: 'block',
                             fontSize: '16px',
                             fontWeight: 'bold',
-                            marginTop: '10px',
+                            marginTop: '10px',  
                         }}
-                        >
+                        > 
                             Name
                         </Typography>
                         <Input
