@@ -59,7 +59,7 @@ const UserForm = props => {
                         sx={{
                             color: 'black',
                             display: 'block',
-                            fontSize: '16px',
+                            fontSize: '16px', 
                             fontWeight: 'bold',
                             marginTop: '10px',  
                         }}
