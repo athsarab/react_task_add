@@ -63,11 +63,11 @@ const UserForm = props => {
                             fontWeight: 'bold',
                             marginTop: '10px',  
                         }}
-                        > 
+                        >   
                             Name  
                         </Typography>
                         <Input
-                        type="text"
+                        type="text"  
                         id="name"
                         name="name"
                         value={name}
