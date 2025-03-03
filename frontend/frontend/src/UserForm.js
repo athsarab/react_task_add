@@ -36,7 +36,7 @@ const UserForm = props => {
                             ID
                         </Typography>
                         <Input
-                        type="number"
+                        type="number"   
                         id="id"
                         name="id"
                         value={id}
