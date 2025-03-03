@@ -3,7 +3,7 @@ import UserForm from "./UserForm";
 import UserTable from "./UserTable";
 
 
-const users = [
+const users = [  
     {
         id: 1,
         name: "John Doe"
