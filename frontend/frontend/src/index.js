@@ -8,7 +8,7 @@ import Users from './Useres';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
- <BrowserRouter>
+ <BrowserRouter>  
  <Routes>
   <Route path="/" element={<App />} />
   <Route path="/useres" element={<Users/>} />
