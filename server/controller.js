@@ -37,7 +37,7 @@ const deleteUser = (req,res,next) => {
     }).catch(err => {
         res.json(err);   
     });
-}  
+}   
 
     
 
