@@ -35,7 +35,7 @@ const deleteUser = (req,res,next) => {
     User.deleteOne({id: id}).then(response => {
         res.json(response);
     }).catch(err => {
-        res.json(err);   
+        res.json(err);    
     });
 }  
 
