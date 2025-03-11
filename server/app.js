@@ -27,4 +27,25 @@ app.get('/users', (req, res) => {
 }
 );  
 
+app.post('/createuser',(req,res) => {
+    controller.addUser(req.body, (callack) => {
+        res.send();
+    });
+}
+);
+
+app.put('/updateuser',(req,res) => {
+    controller.updateUser(req.body, (callack) => {
+        res.send(callack);
+    });
+}
+);
+
+app.delete('/deleteuser',(req,res) => {
+    controller.deleteUser(req.body.id, (callack) => {
+        res.send(callack);
+    });
+}
+);
+ 
 module.exports = app;
