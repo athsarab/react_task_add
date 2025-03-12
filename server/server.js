@@ -9,15 +9,12 @@ const router = require ('./router');
 app.use(cors());
 app.use(express.json());
 
-const uri =  'mongodb+srv://athsarab:athsarab@cluster2.4qpsk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster2'
+const uri =  'mongodb+srv://athsarab:athsarab@cluster3.shquy.mongodb.net/react_task_add?retryWrites=true&w=majority&appName=Cluster2'
 
 const connect = async () => {
     try{
         await mongoose.connect(uri, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-            useFindAndModify: false,
-            useCreateIndex: true,
+
         });
         console.log('Connected to MongoDB');
 
@@ -26,7 +23,7 @@ const connect = async () => {
         console.log('Error connecting to MongoDB');
     }
 }
-
+ 
 connect();
 
 app.listen(port, host, () => {
