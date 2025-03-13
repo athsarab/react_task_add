@@ -1,21 +1,35 @@
 import { Box } from "@mui/material";
 import UserForm from "./UserForm";
 import UserTable from "./UserTable";
+import Axios from 'axios';
+import { useEffect, useState } from 'react';
 
 
-const users = [  
-    {
-        id: 1,
-        name: "John Doe"
-    },
-    {
-        id: 2,
-        name: "Jane Doe"
-    }
-];
+
 
 
 const Users = () => {
+
+    
+        const [users, setUsers] = useState([]);
+
+        useEffect(() => {
+            getUsers();
+
+    } , []);
+
+    const getUsers =  () => {
+        Axios.get('http://localhost:3001/users')
+        .then((response) => {
+            setUsers(response.data);
+        })
+        .catch((error) => {
+            console.log(error);
+        }
+        );
+    }
+
+
     return (
 <Box 
 sx = {
