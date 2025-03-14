@@ -3,9 +3,11 @@ import UserForm from "./UserForm";
 import UserTable from "./UserTable";
 import Axios from 'axios';
 import { useEffect, useState } from 'react';
+//import { set } from "../../../server/app";
 
 const Users = () => {
     const [users, setUsers] = useState([]);
+    const [submitted, setSubmitted] = useState(false);
 
     useEffect(() => {
         getUsers();
@@ -22,6 +24,24 @@ const Users = () => {
             });
     };
 
+    const addUser = (data) => {
+        setSubmitted(true);
+
+const payload = {
+        id: data.id,
+        name: data.name,
+    }
+
+    Axios.post('http://localhost:3001/api/createuser', payload)
+        .then(() => {
+            getUsers();
+            setSubmitted(false);
+        })
+        .catch((error) => {
+            console.error("Error adding user:", error);
+        });
+}
+
     return (
         <Box 
             sx={{
@@ -31,7 +51,9 @@ const Users = () => {
                 marginTop: '50px',
             }}
         >
-            <UserForm />
+            <UserForm 
+                addUser={addUser}
+            />
             <UserTable users={users} />
         </Box>
     );

@@ -1,7 +1,7 @@
 import{ Button, Grid, Input, Typography } from '@mui/material';
 import { useState } from 'react';
 
-const UserForm = props => {
+const UserForm = ({addUser}) => {
 
     const [id,setID] = useState(0);
     const [name,setName] = useState('');
@@ -96,6 +96,12 @@ const UserForm = props => {
                             },
                             
 
+                        }}
+
+                        onClick={() => {
+                            addUser({id: id, name: name});
+ 
+     
                         }}
                         >
                             Submit
