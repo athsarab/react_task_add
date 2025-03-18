@@ -12,7 +12,7 @@ const UserTable = ({ users }) => {
                     </TableRow>
                 </TableHead>
                 <TableBody>
-                    {users.length > 0 ? (
+                    {users.length > 0 ? ( 
                         users.map((user) => (
                             <TableRow key={user.id}>
                                 <TableCell>{user.id}</TableCell>
