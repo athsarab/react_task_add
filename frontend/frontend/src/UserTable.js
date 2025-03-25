@@ -4,7 +4,7 @@ const UserTable = ({ users }) => {
     return (
         <TableContainer component={Paper}>
             <Table>
-                <TableHead>
+                <TableHead>   
                     <TableRow>
                         <TableCell>ID</TableCell>
                         <TableCell>Name</TableCell>
