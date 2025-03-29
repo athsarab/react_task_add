@@ -3,7 +3,7 @@ const app = express();
 const cors = require('cors');
 const controller = require('./controller');
 
-app.use(cors());
+app.use(cors());   
 
 app.use(
     express.urlencoded({
