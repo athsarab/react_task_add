@@ -86,7 +86,7 @@ const UserForm = ({addUser}) => {
                             display: 'block',
                             backgroundColor: 'black',
                             color: 'white',
-                            padding: '10px',  
+                            padding: '10px',     
                             marginTop: '10px',
                             marginleft: 'auto',
                             marginRight: 'auto',
