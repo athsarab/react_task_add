@@ -29,7 +29,7 @@ const Users = () => {
 
 const payload = {
         id: data.id,
-        name: data.name, 
+        name: data.name,  
     }
 
     Axios.post('http://localhost:3001/api/createuser', payload)
