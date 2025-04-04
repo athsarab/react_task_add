@@ -3,7 +3,7 @@ import { Paper, TableContainer, Table, TableHead, TableRow, TableCell, TableBody
 const UserTable = ({ users }) => {
     return (
         <TableContainer component={Paper}>
-            <Table>  
+            <Table>   
                 <TableHead>   
                     <TableRow>
                         <TableCell>ID</TableCell>
