@@ -5,7 +5,7 @@ const controller = require('./controller');
 
 app.use(cors());   
 
-app.use(
+app.use(    
     express.urlencoded({
         extended: true,  
     })
