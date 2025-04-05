@@ -9,7 +9,7 @@ const UserTable = ({ users }) => {
                         <TableCell>ID</TableCell>
                         <TableCell>Name</TableCell>
                         <TableCell>Actions</TableCell>
-                    </TableRow>
+                    </TableRow> 
                 </TableHead>
                 <TableBody>
                     {users.length > 0 ? ( 
