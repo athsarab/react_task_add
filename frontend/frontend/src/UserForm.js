@@ -19,7 +19,7 @@ const UserForm = ({addUser}) => {
                 
                 <Grid item xs={12} sm={6} sx={{display: 'flex', justifyContent: 'center'}}>
                     <Typography variant="h4" align="center">User Form</Typography>
-                    </Grid>
+                    </Grid> 
 
                     <Grid>
                         <Typography
